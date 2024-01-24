@@ -1,0 +1,32 @@
+<!-- header.component.html -->
+
+<header id="header" class="container-fluid bg-dark text-light">
+  <app-navbar></app-navbar>
+  <!-- start of header content -->
+    <div class="jumbotron text-center">
+        <h1 class="myHeaderH1 display-5">Hussein's Portfolio </h1>
+        <p class="lead">Hello, I am <span class="lead myName">Hussein Elmlah</span> using <span class="text-danger">Angular</span></p>
+        <div id="imageCarousel" class="container carousel slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../../assets/img/photos/iti-pic1.jpg" class="d-block w-100" alt="Carousel Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../../assets/img/photos/iti-pic2.jpg" class="d-block w-100" alt="Carousel Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../../assets/img/photos/iti-pic3.jpg" class="d-block w-100" alt="Carousel Image 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</header>
+  
