@@ -1,0 +1,10 @@
+
+<div class="col-12 d-flex " style="margin-bottom: 10px !important;">
+    <div class="col-8">
+        <div class="col-11">
+            <input (keydown.enter)="addTask()" class="form-control " [(ngModel)]="newTaskDescription" placeholder="Add a new task">
+        </div>
+    </div>
+    <button class="col-4 btn btn-primary" (click)="addTask()">Add Task</button>
+</div>
+
