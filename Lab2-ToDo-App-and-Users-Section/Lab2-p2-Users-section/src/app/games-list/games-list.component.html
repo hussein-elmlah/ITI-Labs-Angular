@@ -1,19 +1,22 @@
 <h2 class="text-center">Users list</h2>
-<!-- <ul>
-    <li *ngFor="let game of games">{{ game   }}</li>
-  </ul>
-   -->
-   <div class="form-outline md-3">
-    <input type="search" id="mysearch" class="form-control mb-3" placeholder="search" [(ngModel)]="email" >
-  </div>
-   <div class="row row-cols-1 row-cols-md-4 g-4">
-    <!-- search -->
-  
-    <!-- //12 colmuns -->
-  @for (user of users | filter:email ; track user.id; let i =$index) {
-    <app-game-card [user]="user" (sendToparent)="recievedFromchild($event)"></app-game-card>
-  }@empty {
-    Empty users list
-  }
 
-  </div>
+<div class="form-outline">
+  <input
+    type="search"
+    id="mysearch"
+    class="form-control mb-3"
+    placeholder="Search by email"
+    [(ngModel)]="email"
+  />
+</div>
+<div class="row row-cols-md-4 g-4">
+  <!-- search -->
+
+  <!-- //12 colmuns -->
+  @for (user of users | filter:email ; track user.id; let i =$index) {
+  <app-game-card
+    [user]="user"
+    (sendToparent)="recievedFromchild($event)"
+  ></app-game-card>
+  }@empty { Empty users list }
+</div>
