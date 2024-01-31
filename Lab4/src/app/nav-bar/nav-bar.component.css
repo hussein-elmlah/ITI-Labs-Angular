@@ -1,0 +1,47 @@
+nav {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding);
+    height: 5vh;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation-buttons a {
+    background-color: var(--primary-color);
+    /* border-radius: 8px; */
+    /* border-width: 0; */
+    text-decoration: none;
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 10px 12px;
+    text-align: center;
+    transition: all 200ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.navigation-buttons a {
+    margin: 0px .5rem;
+}
+
+.active-route {
+    color: green !important;
+    font-size: large !important;
+}
