@@ -1,0 +1,13 @@
+.container {
+    max-width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-color);
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.form {
+    width: 40%;
+}

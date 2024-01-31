@@ -1,0 +1,11 @@
+<div class="container-fluid bg-dark text-light">
+    <div class="items">
+        @for (item of cart; track item.id) {
+        <app-cart-item [item]="item" (emitIncrementItemQty)="incrementItemQty($event)"
+            (emitDecrementItemQty)="decrementItemQty($event)" (emitItemDeletion)="deleteItem($event)">
+        </app-cart-item>
+        }
+    </div>
+
+    <h1>Total Price ${{cartPrice}}</h1>
+</div>

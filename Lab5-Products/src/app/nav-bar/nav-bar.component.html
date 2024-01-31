@@ -1,0 +1,19 @@
+<nav class="py-4">
+    <div class="logo">
+        <a routerLink="" routerLinkActive="active-route" [routerLinkActiveOptions]="{exact:true}">
+            Products App
+        </a>
+    </div>
+
+    <div class="navigation-buttons">
+        <button (click)="routeToRegister()" routerLinkActive="active-route">Register</button>
+        <button (click)="routeToLogin()" routerLinkActive="active-route">Login</button>
+        <button (click)="routeToCart()">
+            <i class="fa-solid fa-cart-shopping" style="font-size: large;"></i>
+            <span [className]=" cartSize ? 'badge text-bg-success': 'badge text-bg-secondary'">
+                {{cartSize}}
+            </span>
+        </button>
+
+    </div>
+</nav>

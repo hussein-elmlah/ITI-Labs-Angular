@@ -1,0 +1,23 @@
+<div class="item row justify-content-center align-items-center">
+    <div class="product-img col-2">
+        <img class="w-100 h-100" [src]="item.product.images[0]" alt="">
+    </div>
+    <div class="info col-5">
+        <h4>{{item.product.title}}</h4>
+        <p>{{item.product.description}}</p>
+    </div>
+    <div class="col-1"></div>
+    <div class="quantity col-1">
+        <button (click)="increment()" type="button" class="btn btn-success"><i class="fa-solid fa-plus"></i></button>
+        <h4>{{item.quantity}}</h4>
+        <button (click)="decrement()" type="button" class="btn btn-secondary"><i class="fa-solid fa-minus"></i></button>
+    </div>
+    <div class="col-1"></div>
+    <div class="delete col-1">
+        <button (click)="delete()" type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+    </div>
+
+    <div class="price col-1">
+        <h4>${{item.product.price}}</h4>
+    </div>
+</div>

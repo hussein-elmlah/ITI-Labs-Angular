@@ -1,0 +1,13 @@
+.container-fluid {
+    background-color: var(--primary-color);
+    height: 100vh;
+    padding-top: 5vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.items {
+    width: 70%;
+}
