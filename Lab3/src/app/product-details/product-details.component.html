@@ -1,0 +1,17 @@
+<div class="container bg-dark text-light">
+    <h1>{{product?.title}}</h1>
+    <hr>
+    <app-rating [rating]="product?.rating || 0"></app-rating>
+    <h2>Price : {{product?.price | currency}}</h2>
+    <p><b>Category</b> : {{product?.category}}</p>
+    <p><b>Description</b>: {{product?.description}}</p>
+    <p><b>Discount</b> : {{product?.discountPercentage | percent}}</p>
+    <p><b>Items Avaiable</b> : {{product?.stock}}</p>
+    <div class="row g-5 mb-5 mt-3 mx-2">
+        @for (image of product?.images; track $index) {
+            <div class="col-md">
+                <img class="w-100 h-100" src="{{image}}" alt="product image">
+            </div>
+            }
+    </div>
+</div>
